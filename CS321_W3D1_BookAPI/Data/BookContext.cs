@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BookApi.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Sqlite;
 
 namespace BookApi.Data // CS321_W3D1_BookAPI.Data
 {
