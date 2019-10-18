@@ -1,21 +1,17 @@
-﻿using System.Collections.Generic;
-using CS321_W3D1_BookAPI.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using BookApi.Models;
 
-namespace CS321_W3D1_BookAPI.Services
+namespace BookApi.Services
 {
     public interface IBookService
     {
-        // CRUDL - create (add), read (get), update, delete (remove), list
-
-        // create
-        Book Add(Book todo); 
-        // read
-        Book Get(int id);
-        // update
-        Book Update(Book todo); 
-        // delete
-        void Remove(Book todo);
-        // list
         IEnumerable<Book> GetAll();
+        Book Get(int id);
+        Book Add(Book book);
+        Book Update(Book book);
+        void Remove(Book book); // (variable type)
     }
 }
